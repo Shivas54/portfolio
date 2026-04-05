@@ -77,9 +77,42 @@ h1, h2, h3 { font-family: 'Architects Daughter', cursive; }
   padding-bottom: 150px;
   gap: 4rem;
 }
+.hero-content { 
+  flex: 1 1 50%; /* Changed this line */
+  max-width: 600px; 
+  z-index: 2; 
+}
 
-.hero-content { flex: 1; max-width: 600px; z-index: 2; }
-.hero-visual   { flex: 1; display: flex; justify-content: center; z-index: 2; }
+.hero-visual { 
+  flex: 1 1 50%; /* Changed this line */
+  display: flex; 
+  justify-content: center; 
+  z-index: 2; 
+}
+.hero-content { flex: 1; max-width: 600px; z-index: 2; }.hero-content { 
+  flex: 1 1 50%; /* Changed this line */
+  max-width: 600px; 
+  z-index: 2; 
+}
+
+.hero-visual { 
+  flex: 1 1 50%; /* Changed this line */
+  display: flex; 
+  justify-content: center; 
+  z-index: 2; 
+}
+.hero-visual   { flex: 1; display: flex; justify-content: center; z-index: 2; }.hero-content { 
+  flex: 1 1 50%; /* Changed this line */
+  max-width: 600px; 
+  z-index: 2; 
+}
+
+.hero-visual { 
+  flex: 1 1 50%; /* Changed this line */
+  display: flex; 
+  justify-content: center; 
+  z-index: 2; 
+}
 
 /* --- BADGE --- */
 .sketch-badge {
@@ -101,11 +134,10 @@ h1, h2, h3 { font-family: 'Architects Daughter', cursive; }
   white-space: nowrap;
 }
 
-/* Typewriter cursor blink */
-.typewriter::after {
-  content: '|';
-  animation: blink 0.8s step-end infinite;
-  color: var(--pencil-red);
+.typewriter {
+  display: inline-block;
+  min-width: 300px; /* Reserves space for "Shivas Arulselvam" */
+  white-space: nowrap;
 }
 @keyframes blink { 0%,100% { opacity: 1; } 50% { opacity: 0; } }
 
